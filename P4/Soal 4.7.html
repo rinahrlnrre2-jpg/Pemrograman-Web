@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soal 4.7</title>
+    <link rel="stylesheet" type="text/css" href="Soal 4.7.css">
+    <style>
+        /* Konten awal disembunyikan */
+        .content-section {
+            display: none;
+            padding: 20px;
+            margin: 20px;
+            background: #f9f9f9;
+            border: 1px solid #ccc;
+        }
+
+        /* Saat link dengan id dituju */
+        .content-section:target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h3>Materi Praktikum Pemrograman Web</h3>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="#">Praktikum 1</a>
+                    <ul>
+                        <li><a href="#">1.1 Fondasi HTML </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Praktikum 2</a>
+                    <ul>
+                        <li><a href="#">2.1 CSS-Eksternal </a></li>
+                        <li><a href="#">2.2 Selector </a></li>
+                        <li><a href="#">2.3 Properti-Text HTML</a></li>
+                        <li><a href="#">2.4 Warna-Background HTML </a></li>
+                        <li><a href="#">2.5 Box-HTML </a></li>
+                        <li><a href="#">2.6 Layout-Dasar HTML </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Praktikum 3</a>
+                    <ul>
+                        <li><a href="#">3.1 Bootstrap-Grid </a></li>
+                        <li><a href="#">3.2 Tailwind</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Praktikum 4</a>
+                    <ul>
+                        <li><a href="#">4.1 Embedded Style Sheet </a></li>
+                        <li><a href="#">4.2 Inline Style Sheet</a></li>
+                        <li><a href="#">4.3 Linked Style Sheet</a></li>
+                        <li><a href="#">4.4 Selector</a></li>
+                        <li><a href="#">4.5 Grouping Element</a></li>
+                        <li><a href="#">4.6 Float</a></li>
+                        <li><a href="#">4.7 Dropdown Menu</a></li>
+                    </ul>
+                </li>
+                <!-- About pakai href ke id section -->
+                <li><a href="#about">About Me</a></li>
+            </ul>
+        </div>
+
+        <!-- Konten About -->
+        <section id="about" class="content-section">
+            <h3>About Me</h3>
+            <img src="About Me3.jpg" width="120"><br>
+            <b>Nama:</b> Rina Herlina<br>
+            <b>TTL:</b> Amuntai, 06 Juli 2006<br>
+            <b>NIM:</b> 2411012441184<br>
+            <b>Kelas:</b> Pemrograman Web A
+        </section>
+    </div>
+</body>
+</html>
