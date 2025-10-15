@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Soal 1 - Seleksi Nilai</title>
+</head>
+<body>
+  <h2>Pengecekan Nilai Mahasiswa</h2>
+  <p>Klik tombol di bawah, lalu masukkan nilai antara 0–100.</p>
+  <button onclick="cekNilai()">Cek Nilai</button>
+
+  <h3>Hasil:</h3>
+  <div id="hasil" style="font-weight: bold; color: rgb(0, 85, 0);"></div>
+
+  <script>
+    function cekNilai() {
+      const input = prompt("Masukkan nilai (0 - 100):");
+      const nilai = parseInt(input);
+      const out = document.getElementById('hasil');
+
+      // Validasi input
+      if (isNaN(nilai)) {
+        out.innerHTML = "⚠ Input tidak valid — masukkan angka!";
+        return;
+      }
+      if (nilai < 0 || nilai > 100) {
+        out.innerHTML = "⚠ Nilai harus antara 0 hingga 100.";
+        return;
+      }
+
+      let huruf = "";
+      let ket = "";
+
+      // Seleksi nilai sesuai tabel di modul
+      if (nilai >= 80 && nilai <= 100) {
+        huruf = "A"; ket = "Lulus";
+      } else if (nilai >= 75) {
+        huruf = "AB"; ket = "Lulus";
+      } else if (nilai >= 70) {
+        huruf = "B"; ket = "Lulus";
+      } else if (nilai >= 65) {
+        huruf = "BC"; ket = "Lulus";
+      } else if (nilai >= 60) {
+        huruf = "C"; ket = "Lulus";
+      } else if (nilai >= 50) {
+        huruf = "D"; ket = "Tidak Lulus";
+      } else {
+        huruf = "E"; ket = "Tidak Lulus";
+      }
+
+      // Output hasil lengkap
+      out.innerHTML = `
+        Nilai Angka: <b>${nilai}</b><br>
+        Nilai Huruf: <b>${huruf}</b><br>
+        Keterangan: <b>${ket}</b>
+      `;
+    }
+  </script>
+</body>
+</html>
