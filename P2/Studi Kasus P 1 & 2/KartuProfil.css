@@ -1,0 +1,59 @@
+/* Atur font untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Judul */
+h1 {
+    color: #333;
+}
+
+/* Kartu profil */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("Gunung\ Rinjani.jpg"); /* nama file gambar */
+    background-size: cover;         /* biar gambar penuh layar */
+    background-position: center;    /* posisi gambar di tengah */
+    background-attachment: fixed;   /* biar nggak geser kalau discroll */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Gambar di dalam kartu */
+.card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+/* Nama */
+.card h2 {
+    margin: 10px 0;
+    color: #444;
+}
+
+/* Deskripsi */
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Tombol link */
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #008CBA;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background-color: #005f73;
+}
