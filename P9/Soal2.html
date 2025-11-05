@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Jumlah Uang</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f9; }
+        .container { max-width: 400px; margin: 50px auto; padding: 25px; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+        label, input, button { display: block; margin-bottom: 15px; }
+        input[type="number"] { width: 100%; padding: 10px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 5px; }
+        button { padding: 10px 15px; background-color: #007bff; color: white; border: none; cursor: pointer; border-radius: 5px; margin-right: 10px; }
+        button[type="reset"] { background-color: #6c757d; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Masukkan Jumlah Uang</h2>
+
+    <form method="post" action="Soal2.php">
+        <label for="jumlah_uang">Masukkan Jumlah Uang (Contoh: 1575250):</label>
+        <input type="number" id="jumlah_uang" name="jumlah_uang" min="0" required 
+               placeholder="Contoh: 1575250">
+        
+        <button type="submit" name="submit">Hitung Pecahan</button>
+        <button type="reset">Reset</button>
+    </form>
+</div>
+
+</body>
+</html>

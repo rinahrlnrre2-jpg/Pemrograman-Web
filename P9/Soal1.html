@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Hitung Saldo Akhir</title>
+</head>
+<body>
+  <h2>Hitung Saldo Akhir Tabungan</h2>
+  <form method="post" action="Soal1.php">
+    <label for="saldoAwal">Saldo Awal (Rp):</label><br>
+    <input type="number" name="saldoAwal" id="saldoAwal" required><br><br>
+
+    <label for="bunga">Bunga per Bulan (%):</label><br>
+    <input type="number" step="0.01" name="bunga" id="bunga" required><br><br>
+
+    <label for="bulan">Lama (bulan):</label><br>
+    <input type="number" name="bulan" id="bulan" required><br><br>
+
+    <input type="submit" value="Hitung">
+    <input type="reset" value="Reset">
+  </form>
+</body>
+</html>
